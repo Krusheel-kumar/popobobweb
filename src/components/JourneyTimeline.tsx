@@ -2,12 +2,12 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
 const milestones = [
-  { year: "2017", title: "The Beginning", desc: "Started as a small pop-up, driven by an obsession with authentic flavors.", badge: "The Origin", img: "/src/assets/story2017.png", align: "left" },
-  { year: "2019", title: "First Believers", desc: "Word spread. We introduced our signature menu, crafted to perfection and met with overwhelming love.", badge: "50K+ Cups", img: "/src/assets/story2019.png", align: "right" },
-  { year: "2021", title: "Growing Together", desc: "Expanded our menu and spaces, creating a true community hub in Hyderabad.", badge: "Growing Community", img: "/src/assets/story 2021.png", align: "left" },
-  { year: "2023", title: "Beyond the Cup", desc: "Introduced local fusions and limited edition collections. The menu became a canvas.", badge: "100K+ Community", img: "/src/assets/story2023.png", align: "right" },
-  { year: "2026", title: "Always Evolving", desc: "Redefining the premium bubble tea experience. Sleeker spaces, bolder flavors.", badge: "New Flagship", img: "/src/assets/story2026.png", align: "left" },
-  { year: "Today", title: "The Next Chapter", desc: "We are just getting started. Every cup served is a new story waiting to be told.", badge: "Infinite Possibilities", img: "/src/discovertheculture.png", align: "right" },
+  { year: "2017", title: "The Beginning", desc: "Started as a small pop-up, driven by an obsession with authentic flavors.", badge: "The Origin", img: "/assets/story2017.png", align: "left" },
+  { year: "2019", title: "First Believers", desc: "Word spread. We introduced our signature menu, crafted to perfection and met with overwhelming love.", badge: "50K+ Cups", img: "/assets/story2019.png", align: "right" },
+  { year: "2021", title: "Growing Together", desc: "Expanded our menu and spaces, creating a true community hub in Hyderabad.", badge: "Growing Community", img: "/assets/story 2021.png", align: "left" },
+  { year: "2023", title: "Beyond the Cup", desc: "Introduced local fusions and limited edition collections. The menu became a canvas.", badge: "100K+ Community", img: "/assets/story2023.png", align: "right" },
+  { year: "2026", title: "Always Evolving", desc: "Redefining the premium bubble tea experience. Sleeker spaces, bolder flavors.", badge: "New Flagship", img: "/assets/story2026.png", align: "left" },
+  { year: "Today", title: "The Next Chapter", desc: "We are just getting started. Every cup served is a new story waiting to be told.", badge: "Infinite Possibilities", img: "/discovertheculture.png", align: "right" },
 ];
 
 // Y percentages for the 6 nodes and ending

@@ -27,7 +27,7 @@ export const CinematicScroll: React.FC = () => {
                   whileInView={{ scale: 1, opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 1.2, ease: "easeOut" }}
-                  src="/src/discovertheculture.png" 
+                  src="/discovertheculture.png" 
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1558857563-b37102e95ee5?q=80&w=400&auto=format&fit=crop';
                   }}

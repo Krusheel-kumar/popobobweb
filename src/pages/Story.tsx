@@ -58,7 +58,7 @@ export function Story() {
               <div className="absolute inset-0 bg-luxury-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-10" />
               
               <img 
-                src="/src/assets/peoplebehind.png" 
+                src="/assets/peoplebehind.png" 
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop';
                 }}

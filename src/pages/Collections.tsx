@@ -92,7 +92,7 @@ export function Collections() {
                       {/* Image Container */}
                       <div className="aspect-[4/5] rounded-[2rem] overflow-hidden bg-warm-cream/50 relative mb-6">
                         <img 
-                          src={`/src/assets/${item.img}`} 
+                          src={`/assets/${item.img}`} 
                           alt={item.name} 
                           onError={(e) => {
                              (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1558857563-b37102e95ee5?q=80&w=600&auto=format&fit=crop';
