@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import logoImg from '../assets/Horizontal Wordmark with Emblem.png';
 
 export const Footer: React.FC = () => {

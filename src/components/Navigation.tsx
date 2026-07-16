@@ -4,18 +4,10 @@ import { Menu, X } from 'lucide-react';
 import logoImg from '../assets/Horizontal Wordmark with Emblem.png';
 
 export const Navigation: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeHash, setActiveHash] = useState('#home');
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    
-    // Passive listener for scroll boolean
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    
     // Intersection Observer for active hash to prevent layout thrashing
     const observer = new IntersectionObserver(
       (entries) => {
@@ -35,7 +27,6 @@ export const Navigation: React.FC = () => {
     });
     
     return () => {
-      window.removeEventListener('scroll', handleScroll);
       observer.disconnect();
     };
   }, []);
