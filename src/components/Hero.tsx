@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import heroVideo from '../assets/herovideo.mp4';
+import heroVideo from '../assets/herovideonew.mp4';
 import { NavLink } from 'react-router-dom';
 
 export const Hero: React.FC = () => {
@@ -45,8 +45,8 @@ export const Hero: React.FC = () => {
           className="w-full h-full object-cover object-center filter saturate-[1.1] contrast-[1.1]"
         />
         {/* Soft lighting overlay and ambient glow */}
-        <div className="absolute inset-0 bg-gradient-to-b from-rich-black/70 via-rich-black/40 to-rich-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-luxury-gold/10 via-transparent to-transparent opacity-50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-rich-black/40 via-transparent to-rich-black/80" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-luxury-gold/20 via-transparent to-transparent opacity-60" />
       </motion.div>
 
       {/* Floating Particles (representing subtle tea magic/pearls) */}

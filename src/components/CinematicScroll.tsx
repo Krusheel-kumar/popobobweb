@@ -38,7 +38,7 @@ export const CinematicScroll: React.FC = () => {
                 
                 {/* Elegant overlay tag */}
                 <div className="absolute bottom-6 left-6 z-20 bg-white/20 px-6 py-2 rounded-full border border-white/40 shadow-sm backdrop-blur-md">
-                  <span className="text-white text-xs font-bold tracking-[0.2em] uppercase drop-shadow-sm">Since 2017</span>
+                  <span className="text-white text-xs font-bold tracking-[0.2em] uppercase drop-shadow-sm">Inspired by Taiwan</span>
                 </div>
               </div>
             </div>
@@ -70,29 +70,34 @@ export const CinematicScroll: React.FC = () => {
               
               <div className="pl-6 border-l-2 border-luxury-gold/30">
                 <p className="text-lg md:text-xl text-warm-dark-gray leading-relaxed max-w-md font-medium">
-                  We've created a space in <span className="font-bold text-rich-black">Hyderabad</span> to pause, connect, and <span className="text-luxury-gold font-bold">discover something new</span>. Every cup reflects a culture built on craftsmanship.
+                  Born in Taiwan, it evolved from a beverage into a cultural movement. It is a shared experience. We continue this legacy, honoring the craft that brings people together.
                 </p>
               </div>
             </motion.div>
 
-            {/* The 3 Cards */}
+            {/* The 4 Cards */}
             <div className="flex flex-col w-full relative max-w-lg">
               
               {[
                 { 
-                  title: "Crafted Around You", 
-                  desc: <>Choose your tea, sweetness, and toppings to create a cup that's <span className="font-bold text-rich-black">uniquely yours</span>.</>,
+                  title: "Rooted in Tradition", 
+                  desc: "Honoring centuries of tea craftsmanship. Every leaf is thoughtfully sourced and meticulously brewed.",
                   number: "01"
                 },
                 { 
-                  title: "Made for Everyday", 
-                  desc: <>From study sessions to celebrations, every visit <span className="font-bold text-rich-black">becomes a memory</span>.</>,
+                  title: "Intentionally Yours", 
+                  desc: "A personal experience in every cup. Balanced to your exact taste, crafted for your moment.",
                   number: "02"
                 },
                 { 
-                  title: "Growing With You", 
-                  desc: <>Every guest and shared smile <span className="font-bold text-rich-black">shapes our story</span>. The next chapter is yours.</>,
+                  title: "Uncompromising Quality", 
+                  desc: "Premium ingredients dictate our process. We refine every detail to elevate the everyday beverage.",
                   number: "03"
+                },
+                { 
+                  title: "Shared Connections", 
+                  desc: "A catalyst for conversation. Where quiet pauses and gatherings turn into lasting memories.",
+                  number: "04"
                 }
               ].map((card, i) => (
                 <motion.div 

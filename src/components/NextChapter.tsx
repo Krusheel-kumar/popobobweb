@@ -3,75 +3,84 @@ import { motion } from 'framer-motion';
 
 export const NextChapter: React.FC = () => {
   return (
-    <section className="relative min-h-[90vh] bg-warm-cream text-rich-black flex flex-col items-center justify-center overflow-hidden py-32 z-20">
+    <section className="relative bg-warm-cream text-rich-black py-24 lg:py-32 overflow-hidden flex flex-col items-center justify-center z-20 min-h-[70vh]">
       
-      {/* Background illumination that bridges from the dark timeline to the bright future */}
-      <div className="absolute inset-0 bg-gradient-to-t from-warm-cream via-soft-ivory to-rich-black/5 pointer-events-none" />
+      {/* Background glow for luxury feel */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-luxury-gold/10 rounded-full blur-[100px] pointer-events-none" />
 
-      {/* The golden connector line fading into the horizon */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-32 bg-gradient-to-b from-luxury-gold to-transparent opacity-80" />
-      
-      <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
-        className="relative z-10 max-w-4xl mx-auto px-6 text-center"
-      >
-        <span className="text-luxury-gold tracking-[0.3em] uppercase text-sm font-bold mb-8 block">
-          Beyond {new Date().getFullYear()}
-        </span>
+      {/* Decorative vertical line */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-gradient-to-b from-luxury-gold/60 to-transparent opacity-80" />
+
+      <div className="max-w-[70rem] mx-auto px-6 relative z-10 flex flex-col items-center text-center mt-12">
         
-        <h1 className="text-6xl md:text-8xl font-heading text-rich-black mb-12">
-          The Next Chapter
-        </h1>
-        
-        <div className="text-xl md:text-2xl text-warm-dark-gray font-light leading-relaxed space-y-6 max-w-3xl mx-auto mb-16 text-balance">
-          <p>
-            Our story isn't finished. 
-          </p>
-          <p>
-            Every customer, every shared conversation, and every first sip becomes part of what comes next.
-          </p>
-          <p className="italic">
-            Whether today becomes your first cup or your hundredth, thank you for spending time inside our world. We'd love for you to become part of the next chapter of POP O'BOB.
-          </p>
-        </div>
+        {/* Eyebrow */}
+        <motion.span 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="text-luxury-gold font-bold text-xs md:text-sm uppercase tracking-[0.4em] mb-8 md:mb-10"
+        >
+          Before You Go...
+        </motion.span>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <button className="w-full sm:w-auto px-10 py-5 bg-rich-black text-warm-cream rounded-full text-lg font-medium hover:bg-luxury-gold hover:text-rich-black transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1">
-            Become Part Of Our Story
-          </button>
-          <button className="w-full sm:w-auto px-10 py-5 border-2 border-rich-black text-rich-black rounded-full text-lg font-medium hover:bg-rich-black hover:text-warm-cream transition-all duration-300">
-            Visit POP O'BOB
-          </button>
-        </div>
+        {/* Main Heading */}
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.2] text-rich-black max-w-[55rem] mx-auto tracking-tight mb-10 md:mb-12"
+        >
+          <span className="block mb-2">Whether today becomes your first cup</span>
+          <span className="block mb-2">or your hundredth,</span>
+          <span className="block text-rich-black/80 font-medium text-3xl md:text-4xl lg:text-5xl mt-6">thank you for spending a little time</span>
+          <span className="block text-rich-black/80 font-medium text-3xl md:text-4xl lg:text-5xl">inside our world.</span>
+        </motion.h2>
 
-      </motion.div>
-      
-      {/* Ambient particles for the bright future */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0 opacity-40">
-        {Array.from({ length: 8 }).map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-2 h-2 rounded-full bg-luxury-gold blur-[2px]"
-            initial={{ 
-              x: Math.random() * 100 + "%", 
-              y: Math.random() * 100 + "%",
-              opacity: 0.1
-            }}
-            animate={{
-              y: ["-10%", "-50%", "-100%"],
-              opacity: [0, 0.5, 0]
-            }}
-            transition={{
-              duration: Math.random() * 5 + 10,
-              repeat: Infinity,
-              ease: "linear",
-              delay: Math.random() * 5
-            }}
-          />
-        ))}
+        {/* Subtext */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="text-warm-dark-gray italic text-xl md:text-2xl mb-14 md:mb-16 font-light"
+        >
+          We'll save you a seat.
+        </motion.p>
+
+        {/* Action Buttons */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 w-full sm:w-auto"
+        >
+          <a 
+            href="https://order.popobob.com" 
+            target="_blank" 
+            rel="noreferrer"
+            className="w-full sm:w-auto px-12 py-5 bg-rich-black text-warm-cream rounded-full font-bold text-sm uppercase tracking-widest hover:bg-luxury-gold hover:text-rich-black transition-all duration-300 shadow-xl hover:-translate-y-1"
+          >
+            Order Now
+          </a>
+          
+          <a 
+            href="#collections" 
+            className="w-full sm:w-auto px-12 py-5 bg-transparent border border-rich-black/20 text-rich-black rounded-full font-bold text-sm uppercase tracking-widest hover:border-rich-black hover:bg-rich-black/5 transition-all duration-300"
+          >
+            Visit Store
+          </a>
+          
+          <a 
+            href="#community" 
+            className="w-full sm:w-auto px-6 py-5 text-rich-black/60 hover:text-luxury-gold text-sm font-bold uppercase tracking-widest transition-colors duration-300 underline underline-offset-8 decoration-rich-black/20 hover:decoration-luxury-gold"
+          >
+            Join POP Club
+          </a>
+        </motion.div>
+
       </div>
     </section>
   );

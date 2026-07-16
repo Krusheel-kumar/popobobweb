@@ -1,4 +1,5 @@
 import { Hero } from '../components/Hero';
+import { CrossedRibbon } from '../components/CrossedRibbon';
 import { BobaShakeSpotlight } from '../components/BobaShakeSpotlight';
 import { Collections } from './Collections';
 import { DigitalOrderingSection } from '../components/DigitalOrderingSection';
@@ -15,11 +16,14 @@ export function Home() {
       
       {/* 1. THE HOOK */}
       <Hero />
-      
+
       {/* 2. THE HYPE (New Launches) */}
       <div id="boba-shakes-spotlight">
         <BobaShakeSpotlight />
       </div>
+
+      {/* BRAND SIGNATURE RIBBON */}
+      <CrossedRibbon />
 
       {/* 3. THE OFFERING (Menu & Products) */}
       <div id="collections">

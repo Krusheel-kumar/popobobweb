@@ -5,57 +5,18 @@ import logoImg from '../assets/Horizontal Wordmark with Emblem.png';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-rich-black text-warm-cream pt-32 pb-12 overflow-hidden relative">
-      <div className="max-w-4xl mx-auto px-6 text-center mb-32">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 1 }}
-        >
-          <h2 className="text-sm font-medium tracking-[0.3em] uppercase text-luxury-gold mb-8">
-            Before You Go...
-          </h2>
-          <p className="text-3xl md:text-5xl font-heading text-soft-ivory leading-relaxed mb-16 text-balance">
-            Whether today becomes your first cup<br className="hidden md:block"/>
-            or your hundredth,<br className="hidden md:block"/>
-            thank you for spending a little time<br className="hidden md:block"/>
-            inside our world.
-          </p>
-          <p className="text-xl text-warm-dark-gray italic mb-16">
-            We'll save you a seat.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a 
-              href="https://order.popobob.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-10 py-4 bg-luxury-gold text-rich-black rounded-full font-medium hover:bg-soft-ivory transition-colors duration-300"
-            >
-              Order Now
-            </a>
-            <NavLink to="/community" className="px-10 py-4 border border-warm-cream/30 rounded-full font-medium hover:border-luxury-gold transition-colors duration-300">
-              Visit Store
-            </NavLink>
-            <NavLink to="/community" className="px-10 py-4 text-warm-cream/70 hover:text-luxury-gold transition-colors duration-300 underline underline-offset-8">
-              Join POP Club
-            </NavLink>
-          </div>
-        </motion.div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 border-t border-white/10 pt-16 relative z-10">
+    <footer className="bg-rich-black text-warm-cream py-16 overflow-hidden relative">
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 lg:col-span-2">
-            <div className="mb-6">
+            <div className="mb-8">
               <img 
                 src={logoImg} 
                 alt="POP O'BOB Logo" 
-                className="h-12 w-auto object-contain brightness-0 invert opacity-90"
+                className="h-12 md:h-16 w-auto object-contain opacity-100"
               />
             </div>
-            <p className="text-white/50 max-w-sm mb-8 leading-relaxed text-sm">
+            <p className="text-white/50 max-w-sm mb-8 leading-relaxed text-sm md:text-base">
               Crafting premium bubble tea experiences since 2017. 
               The digital flagship of POP O'BOB.
             </p>
@@ -92,7 +53,7 @@ export const Footer: React.FC = () => {
             <img 
               src={logoImg} 
               alt="POP O'BOB Logo" 
-              className="h-6 w-auto object-contain brightness-0 invert opacity-30"
+              className="h-6 w-auto object-contain opacity-30"
             />
             <p>&copy; {new Date().getFullYear()} POP O'BOB.</p>
           </div>

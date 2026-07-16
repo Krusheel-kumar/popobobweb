@@ -55,9 +55,7 @@ export const Navigation: React.FC = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'py-4 glass' : 'py-6 bg-transparent'
-        }`}
+        className="absolute top-0 left-0 right-0 z-50 transition-all duration-300 py-6 bg-transparent"
       >
         <div className="max-w-[90rem] mx-auto px-6 md:px-12 flex justify-between items-center">
           <a href="#home" className="flex items-center">

@@ -14,8 +14,8 @@ export const DigitalOrderingSection: React.FC = () => {
           <line x1="14" y1="2" x2="14" y2="4" />
         </svg>
       ),
-      title: "Authentic Craft",
-      desc: "Sourced from premier tea estates, slow-brewed daily, and perfectly paired with our signature chewy pearls."
+      title: "Freshly Brewed",
+      desc: "Real tea, brewed fresh every day. Paired perfectly with our signature chewy boba."
     },
     {
       num: "02",
@@ -25,8 +25,8 @@ export const DigitalOrderingSection: React.FC = () => {
           <line x1="12" y1="18" x2="12.01" y2="18"/>
         </svg>
       ),
-      title: "Infinite Customization",
-      desc: "Control your sweetness, dial in your ice, and explore exclusive toppings directly from your phone."
+      title: "Customize Your Drink",
+      desc: "Choose your sweetness, ice level, and favorite toppings right from your phone."
     },
     {
       num: "03",
@@ -36,8 +36,8 @@ export const DigitalOrderingSection: React.FC = () => {
           <polyline points="12 6 12 12 16 14"/>
         </svg>
       ),
-      title: "Priority Pickup",
-      desc: "Bypass the queue. Your handcrafted cup will be ready and waiting the moment you step through our doors."
+      title: "Skip the Line",
+      desc: "Order ahead and skip the wait. Your drink will be ready when you arrive."
     },
     {
       num: "04",
@@ -46,8 +46,8 @@ export const DigitalOrderingSection: React.FC = () => {
           <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
         </svg>
       ),
-      title: "The Inner Circle",
-      desc: "Unlock tiered rewards, early access to new seasonal flavors, and exclusive drops just by sipping."
+      title: "Earn Rewards",
+      desc: "Earn points with every sip. Get free drinks, early access to new flavors, and special offers."
     }
   ];
 
@@ -83,7 +83,7 @@ export const DigitalOrderingSection: React.FC = () => {
             </h2>
             
             <p className="text-warm-dark-gray text-lg font-medium mb-12 leading-relaxed">
-              Experience POP O'BOB at the tap of a button. Skip the line and get rewarded for every sip.
+              Get POP O'BOB at the tap of a button. Order ahead to skip the line and earn rewards with every drink.
             </p>
 
             <a 
